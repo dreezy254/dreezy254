@@ -1,0 +1,31 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4,150px);
+  grid-auto-rows:minmax(100px,auto) ;
+  grid-gap: 10px;
+  grid-template-areas: "navbar navbar main main"
+  "navbar navbar content1 content2"
+  "sidebar sidebar footer footer"
+  "sidebar sidebar content3 content4";
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.grid-item1{
+grid-area: navbar;
+}
+.grid-item2{
+  grid-area:sidebar;
+}
+.grid-item3{
+  grid-area: main;
+}
+.grid-item4{
+  grid-area: content1;
+}
+.grid-item5{
+  grid-area: content2;
+}
+.grid-item6{
+  grid-area: footer;
+}
